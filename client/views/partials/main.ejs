@@ -1,0 +1,20 @@
+<div class="container" id="main">
+               <div class="jumbotron">         
+   <form action="/weatherapi" method="POST">
+           <div class="form-group">
+                   <label for="Category">Get Weather by</label>
+                   <select class="form-control" name="Category">
+                     <option value="1">City Name</option>
+                     <option value="2">Zip Code</option>
+                   </select>
+                   </div>
+           <div class="form-group">
+                   <label for="City/ZipCode">City/ZipCode</label>
+                   <input type="text" class="form-control" placeholder="Enter ZipCode/City" name="searchValue" required>
+                 </div>
+                 <div class="form-group">
+                       <button type="submit" class="btn btn-primary mb-2">Search</button>
+                 </div>
+     </form>
+</div>  
+   </div> 

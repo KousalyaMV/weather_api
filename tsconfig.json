@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target":"es6",
+        "noImplicitAny": true,
+        "pretty": true,
+        "baseUrl": "./server/src",
+        "outDir": "./server/dist"
+    }
+    //https://toddmotto.com/classes-vs-interfaces-in-typescript
+}

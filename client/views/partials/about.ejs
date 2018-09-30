@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <% include ./head %>
+    </head>
+    <body>
+        <header>
+            <% include ./header %>
+        </header>
+        <main>
+                <h3>
+                        Welcome to Live Weather 
+                    </h3>
+                    <div class="container-fluid" id="main">
+                        <div class="jumbotron">
+                            <div class="row">
+                                    <%if (citytemp.length > 0) { %>
+                                        <p class="textp">Weather for City/Zipcode:<%=city %> is <b><%= citytemp %> C</b></p>
+                                        <% } %>
+                                    <%if (citytemp.length <= 0) { %>
+                                            <p class="textp">Weather for City/Zipcode:<%=city %> is not found</b></p>
+                                    <% } %>
+                               
+                            </div>
+                        </div>
+                    </div>
+        </main>
+        <footer>
+            <% include ./footer %>
+        </footer>
+    </body>
+</html>
