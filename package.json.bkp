@@ -5,20 +5,14 @@
     "author": "kousalyamv",
     "license": "ISC",
     "scripts": {
-        "dev": "SET NODE_ENV=development && nodemon ./server/dist/index",
-        "grunt": "grunt",
-        "start": "npm run grunt && nodemon ./server/dist/index"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "tsc --watch",
+        "start": "nodemon ./server/dist/index.js"
     },
     "dependencies": {
         "@types/express": "^4.16.0",
         "body-parser": "^1.18.3",
         "ejs": "^2.6.1",
         "express": "^4.16.3"
-    },
-    "devDependencies": {
-        "grunt": "^1.0.3",
-        "grunt-contrib-watch": "^1.1.0",
-        "grunt-ts": "^6.0.0-beta.21",
-        "typescript": "^3.1.1"
     }
 }
